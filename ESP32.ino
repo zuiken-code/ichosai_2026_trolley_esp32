@@ -1281,6 +1281,20 @@ void setup()
         UDP_PORT
     );
 
+    Serial.print("IP      : ");
+Serial.println(WiFi.localIP());
+
+Serial.print("Gateway : ");
+Serial.println(WiFi.gatewayIP());
+
+Serial.print("Subnet  : ");
+Serial.println(WiFi.subnetMask());
+
+Serial.print("RSSI    : ");
+Serial.println(WiFi.RSSI());
+
+Serial.print("SSID    : ");
+Serial.println(WiFi.SSID());
 
     // --------------------------------------------------------
     // 制御タスク
